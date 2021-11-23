@@ -106,34 +106,34 @@ $(document).ready(function ($) {
 					email: true
 				},
 			},
-			submitHandler: function(form) {
-				var formData = $('#free-consultation-form').serialize();
-				$.ajax({
-					type: 'POST',
-					url: 'https://gmail.us20.list-manage.com/subscribe/post?u=ec6614d3eebff317243ab4831&amp;id=4abffae260',
-					dataType: "json",
-					data: formData,
-					success: function (data) {
-						if (data.success) {
-							$('.form-status').addClass('alert alert-success');
-							$('.form-status').text('Your Message Has been Sent Successfully');
-							form.submit();
-							$('.form-status').slideDown().delay(3000).slideUp();
-							$("#free-consultation-form").trigger("reset");
-							window.location.href = 'https://canadadreams.live/oto.html';
-						} else {
-							$('.form-status').addClass('alert alert-danger');
-							$('.form-status').text('Error Occurred, Please Try Again');
-							$('.form-status').slideDown().delay(3000).slideUp();
-						}
-					},
-					error: function (xhr, status, error) {
-						$('.form-status').addClass('alert alert-danger');
-						$('.form-status').text('Something Went Wrong');
-						$('.form-status').slideDown().delay(3000).slideUp();
-					}
-				});
-			}
+			// submitHandler: function(form) {
+			// 	var formData = $('#free-consultation-form').serialize();
+			// 	$.ajax({
+			// 		type: 'POST',
+			// 		url: 'https://gmail.us20.list-manage.com/subscribe/post?u=ec6614d3eebff317243ab4831&amp;id=4abffae260',
+			// 		dataType: "json",
+			// 		data: formData,
+			// 		success: function (data) {
+			// 			if (data.success) {
+			// 				$('.form-status').addClass('alert alert-success');
+			// 				$('.form-status').text('Your Message Has been Sent Successfully');
+			// 				form.submit();
+			// 				$('.form-status').slideDown().delay(3000).slideUp();
+			// 				$("#free-consultation-form").trigger("reset");
+			// 				window.location.href = 'https://canadadreams.live/oto.html';
+			// 			} else {
+			// 				$('.form-status').addClass('alert alert-danger');
+			// 				$('.form-status').text('Error Occurred, Please Try Again');
+			// 				$('.form-status').slideDown().delay(3000).slideUp();
+			// 			}
+			// 		},
+			// 		error: function (xhr, status, error) {
+			// 			$('.form-status').addClass('alert alert-danger');
+			// 			$('.form-status').text('Something Went Wrong');
+			// 			$('.form-status').slideDown().delay(3000).slideUp();
+			// 		}
+			// 	});
+			// }
 		});
 	}
 
