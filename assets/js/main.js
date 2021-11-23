@@ -110,7 +110,7 @@ $(document).ready(function ($) {
 				var formData = $('#free-consultation-form').serialize();
 				$.ajax({
 					type: 'POST',
-					url: 'assets/php/popup-form.php',
+					url: 'https://gmail.us20.list-manage.com/subscribe/post?u=ec6614d3eebff317243ab4831&amp;id=4abffae260',
 					dataType: "json",
 					data: formData,
 					success: function (data) {
@@ -120,7 +120,7 @@ $(document).ready(function ($) {
 							form.submit();
 							$('.form-status').slideDown().delay(3000).slideUp();
 							$("#free-consultation-form").trigger("reset");
-							window.location.href = 'https://webdevproof.com/theme-forest-demo/funnel-templates/therapist/oto.html';
+							window.location.href = 'https://canadadreams.live/oto.html';
 						} else {
 							$('.form-status').addClass('alert alert-danger');
 							$('.form-status').text('Error Occurred, Please Try Again');
